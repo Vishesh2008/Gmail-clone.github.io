@@ -171,9 +171,9 @@
             </a>
             <svg xmlns="http://www.w3.org/2000/svg" @click="show = !show" class="absolute right-36 bottom-12 hover:bg-gray-200 p-1 rounded-full cursor-pointer" height="28px" viewBox="0 0 24 24" width="28px" fill="#706d6d"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
             <span x-show="show" class="bg-white text-center shadow-lg border border-black rounded-md absolute bottom-20 w-40 right-40 ">
-                Close Window
+                <span x-show="visible" @click="visible = false" class="cursor-pointer">Close Window</span>
                 <hr>
-                Delete Draft
+                <span x-show="visible" @click="visible = false" class="cursor-pointer">Delete Draft</span>
             </span>
             <span x-show="attach" class="bg-white text-center shadow-lg border border-black rounded-md absolute bottom-20 w-28 right-0">
                 Attach
